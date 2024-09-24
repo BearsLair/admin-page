@@ -9,7 +9,6 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .main-grid {
@@ -23,14 +22,64 @@ body {
 }
 
 .sidebar {
+  border-radius: 10px 0px 0px 10px;
   grid-column: 1 / 2;
   grid-row: 1 / 5;
-  border: 1px solid blue;
+  border: 1px solid rgb(73, 73, 255);
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(73, 73, 255);
 }
 
 .sidebar > div {
   display: flex;
   flex-direction: column;
+}
+
+.sidebar > h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.profile-links > a:link,
+.profile-links > a:visited,
+.profile-links > a:hover,
+.profile-links > a:active {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.settings {
+  margin-top: 50px;
+}
+
+.settings > a:link,
+.settings > a:visited,
+.settings > a:hover,
+.settings > a:active {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.header {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  border: 2px solid pink;
+  border-radius: 0px 10px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.main-content {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+  border: 2px solid red;
 }
