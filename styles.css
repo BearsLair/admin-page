@@ -170,11 +170,22 @@ body {
   border: 1px solid blue;
 }
 
-.project-card {
-  border: 1px solid green;
+.project-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid black;
 }
 
-.announcements-trending {
+.project-card {
+  border: 1px solid green;
+  background-color: white;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.project-card .announcements-trending {
   grid-column: 3 / 4;
   grid-row: 1 / 4;
 }
@@ -185,4 +196,10 @@ body {
 
 .trending {
   border: 1px solid purple;
+}
+
+.projects,
+.announcements,
+.trending {
+  padding: 0.5rem;
 }
